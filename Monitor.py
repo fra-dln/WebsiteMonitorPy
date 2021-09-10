@@ -11,6 +11,7 @@ MY_PASSWORD='Password4321'
 TO_='kecco9939@gmail.com'
 URL='http://www.sbai.uniroma1.it/~daniela.sforza/'
 MESSAGE="Hey the websites you are monitoring has changed!"
+TIME=30
 
 
 # setting the URL you want to monitor
@@ -38,8 +39,8 @@ while True:
         # create a hash
         currentHash = hashlib.sha224(response).hexdigest()
           
-        # wait for 3600 seconds
-        time.sleep(3600)
+        # wait for TIME seconds
+        time.sleep(TIME)
           
         # perform the get request
         response = urlopen(url).read()
@@ -49,6 +50,7 @@ while True:
   
         # check if new hash is same as the previous hash
         if newHash == currentHash:
+            print("nothing has changed")
             continue
   
         # if something changed in the hashes
@@ -75,8 +77,8 @@ while True:
             # create a hash
             currentHash = hashlib.sha224(response).hexdigest()
   
-            # wait for 3600 seconds
-            time.sleep(3600)
+            # wait for TIME seconds
+            time.sleep(TIME)
             continue
               
     # To handle exceptions
