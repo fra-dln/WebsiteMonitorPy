@@ -10,7 +10,7 @@ MY_ADDRESS='test.allert@outlook.com'
 MY_PASSWORD='Password4321'
 TO_='kecco9939@gmail.com'
 URL='http://www.sbai.uniroma1.it/~daniela.sforza/'
-MESSAGE="Hey the websites you are monitoring has changed!"
+MESSAGE="Hey the websites with this url: $URL has changed!"
 TIME=30
 
 
