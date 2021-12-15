@@ -6,10 +6,10 @@ from urllib.request import urlopen, Request
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-MY_ADDRESS='test.allert@outlook.com'
-MY_PASSWORD='Password4321'
-TO_='kecco9939@gmail.com'
-URL='http://www.sbai.uniroma1.it/~daniela.sforza/'
+MY_ADDRESS='myemail@notify.com'
+MY_PASSWORD='mypassword'
+TO_='destination@email.com'
+URL='http://www.url.to.be.monitored'
 MESSAGE="Hey the websites with this url: $URL has changed!"
 TIME=30
 
